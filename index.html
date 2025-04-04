@@ -103,6 +103,52 @@
             </div>
         </div>
     </section>
+
+
+    
+    <section id="horses" class="horses">
+        <div class="horses-container">
+            <div class="horses-ops">
+                <h2>Лошадки на нашем Ранчо</h2>
+                <p>Записывайтесь на прогулку и познакомьтесь с замечательными породами лошадей.</p>
+            </div>
+            <div class="horses-gallery">
+                <div class="horses-card">
+                    <img src="./img/gallery/test1.jpg" alt="horse1">
+                    <h4>test text 1</h4>
+                    <p>test sub text1</p>
+                    <button class="order-btn" data-horse-name="test text 1" onclick="addHorseNameToBooking(this)">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test2.jpg" alt="horse2">
+                    <h4>test text 2</h4>
+                    <p>test sub text2</p>
+                    <button class="order-btn" data-horse-name="test text 2" onclick="addHorseNameToBooking(this)">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test3.jpg" alt="horse3">
+                    <h4>test text 3</h4>
+                    <p>test sub text3</p>
+                    <button class="order-btn" data-horse-name="test text 3" onclick="addHorseNameToBooking(this)">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test4.jpg" alt="horse4">
+                    <h4>test text 4</h4>
+                    <p>test sub text4</p>
+                    <button class="order-btn" data-horse-name="test text 4" onclick="addHorseNameToBooking(this)">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="booking" class="booking-section">
         <div class="container">
             <div class="booking-header">
@@ -158,11 +204,11 @@
                             <label for="service">Услуга *</label>
                             <select id="service" name="service" required>
                                 <option value="">Выберите услугу</option>
-                                <option value="individual">Индивидуальная прогулка</option>
-                                <option value="group">Групповая прогулка</option>
+                                <option value="progulka">Индивидуальная прогулка</option>
+                                <option value="group progulka">Групповая прогулка</option>
                                 <option value="photoshoot">Фотосессия с лошадьми</option>
                                 <option value="training">Обучение верховой езде</option>
-                                <option value="trek">Конный поход</option>
+                                <!-- <option value="trek">Конный поход</option> -->
                                 <option value="children">Детская программа</option>
                             </select>
                         </div>
@@ -224,6 +270,55 @@
             </div>
         </div>
     </section>
+    <!-- <section id="horses" class="horses">
+        <div class="horses-container">
+            <div class="horses-ops">
+                <h2>Лошадки на нашем Ранчо</h2>
+                <p>Записывайтесь на прогулку и познакомьтесь с замечательными породами лошадей.</p>
+            </div>
+            <div class="horses-gallery">
+                <div class="horses-card">
+                    <img src="./img/gallery/test1.jpg" alt="horse1">
+                    <h4>test text 1</h4>
+                    <p>test sub text1</p>
+                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test2.jpg" alt="horse2">
+                    <h4>test text 2</h4>
+                    <p>test sub text2</p>
+                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test3.jpg" alt="horse3">
+                    <h4>test text 3</h4>
+                    <p>test sub text3</p>
+                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/test4.jpg" alt="horse4">
+                    <h4>test text 4</h4>
+                    <p>test sub text4</p>
+                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+
+
+    
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

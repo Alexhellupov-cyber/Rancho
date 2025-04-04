@@ -63,3 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+function addHorseNameToBooking(button) {
+    var horseName = button.getAttribute("data-horse-name");
+    var messageField = document.getElementById("message");
+    messageField.value = "Я хочу записаться на прогулку с лошадкой: " + horseName + "\n\n";
+}

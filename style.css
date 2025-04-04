@@ -487,8 +487,116 @@ textarea:focus {
     margin-bottom: 0.5rem;
 }
 
+/* Контейнер секции */
+.horses {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.horses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Оформление заголовков */
+.horses-ops h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.horses-ops p {
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Галерея изображений */
+.horses-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* Карточки с лошадками */
+.horses-card {
+    background-color: #FDF6E9;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horses-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.horses-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #B45309;
+}
+
+/* Оформление текста в карточках */
+.horses-card h4 {
+    font-size: 22px;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.horses-card p {
+    font-size: 16px;
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: center;
+}
+
+/* Кнопки */
+.order-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #B45309;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color:#92400E;
+}
+
+.order-btn:focus {
+    outline: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .horses-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horses-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
 
