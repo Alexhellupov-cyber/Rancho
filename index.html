@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rancho</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -14,13 +15,16 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#">Лошадки</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
-                    <li><a href="#">Контактфы</a></li>
+                    <li><a href="#horses">Лошадки</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#price">Прайс-лист</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
+                
             </nav>
-            <button class="order-btn">Запись</button>
+            <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
+                Запись
+            </button>
         </div>
         <div class="header-title">
             <div class="header-container">
@@ -214,7 +218,7 @@
                         <h4>Контакты</h4>
                         <p>Телефон: +380 XXX-XX-XX</p>
                         <p>Email: info@equitour.ua</p>
-                        <p>Адрес: Московская область, деревня Конный Двор</p>
+                        <p>Адрес: Украина, Московская область, прос.Степана Бандеры 1488 </p>
                     </div>
                 </div>
             </div>

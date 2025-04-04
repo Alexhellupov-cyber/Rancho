@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
 body {
     margin: 0;
     /* Убираем фоновое изображение из body */
@@ -94,6 +100,8 @@ nav ul li a {
 .header-title {
     padding: 50px 1000px 40px 100px;
 }
+
+
 
 .header-text {
     padding: 20px;
@@ -313,6 +321,10 @@ body {
 }
 
 .booking-section {
+    background-image: url(./img/headerimg.jpg);
+    background-size: cover; /* Картинка полностью покрывает фон */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Отключаем повторение */
     padding: 4rem 1rem;
 }
 
@@ -324,6 +336,8 @@ body {
 .booking-header {
     text-align: center;
     margin-bottom: 3rem;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 
 .booking-header h2 {
@@ -446,6 +460,7 @@ textarea:focus {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color:#fef3c7;
 }
 
 .info-section {
@@ -470,4 +485,85 @@ textarea:focus {
 
 .info-section p {
     margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .header-title {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-form,
+    .booking-info {
+        width: 100%;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+    }
+
+    .booking-form,
+    .booking-info {
+        width: 100%;
+    }
 }
