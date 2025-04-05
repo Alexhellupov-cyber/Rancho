@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="#horses">Лошадки</a></li>
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#price">Прайс-лист</a></li>
+                    <!-- <li><a href="#price">Прайс-лист</a></li> -->
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 
@@ -114,34 +114,42 @@
             </div>
             <div class="horses-gallery">
                 <div class="horses-card">
-                    <img src="./img/gallery/test1.jpg" alt="horse1">
-                    <h4>test text 1</h4>
-                    <p>test sub text1</p>
-                    <button class="order-btn" data-horse-name="test text 1" onclick="addHorseNameToBooking(this)">
+                    <img src="./img/gallery/loshadka1.jpg" alt="horse1">
+                    <h4>Беляш</h4>
+                    <p>Беляш\черкаш</p>
+                    <button class="order-btn" data-horse-name="Беляш" onclick="addHorseNameToBooking(this)">
                         Записаться на прогулку с этой лошадкой
                     </button>
                 </div>
                 <div class="horses-card">
-                    <img src="./img/gallery/test2.jpg" alt="horse2">
-                    <h4>test text 2</h4>
-                    <p>test sub text2</p>
-                    <button class="order-btn" data-horse-name="test text 2" onclick="addHorseNameToBooking(this)">
+                    <img src="./img/gallery/loshadka2.jpg" alt="horse2">
+                    <h4>Дона</h4>
+                    <p>Доня 2</p>
+                    <button class="order-btn" data-horse-name="Дона" onclick="addHorseNameToBooking(this)">
                         Записаться на прогулку с этой лошадкой
                     </button>
                 </div>
                 <div class="horses-card">
-                    <img src="./img/gallery/test3.jpg" alt="horse3">
-                    <h4>test text 3</h4>
-                    <p>test sub text3</p>
-                    <button class="order-btn" data-horse-name="test text 3" onclick="addHorseNameToBooking(this)">
+                    <img src="./img/gallery/loshadka3.jpg" alt="horse3">
+                    <h4>Доня</h4>
+                    <p>Доня красотка</p>
+                    <button class="order-btn" data-horse-name="Дона" onclick="addHorseNameToBooking(this)">
                         Записаться на прогулку с этой лошадкой
                     </button>
                 </div>
                 <div class="horses-card">
-                    <img src="./img/gallery/test4.jpg" alt="horse4">
-                    <h4>test text 4</h4>
-                    <p>test sub text4</p>
-                    <button class="order-btn" data-horse-name="test text 4" onclick="addHorseNameToBooking(this)">
+                    <img src="./img/gallery/loshadka4.jpg" alt="horse4">
+                    <h4>Дона</h4>
+                    <p>красотка</p>
+                    <button class="order-btn" data-horse-name="Дона" onclick="addHorseNameToBooking(this)">
+                        Записаться на прогулку с этой лошадкой
+                    </button>
+                </div>
+                <div class="horses-card">
+                    <img src="./img/gallery/loshadka5.jpg" alt="horse4">
+                    <h4>Дуня</h4>
+                    <p>Ваще песня</p>
+                    <button class="order-btn" data-horse-name="Дуня" onclick="addHorseNameToBooking(this)">
                         Записаться на прогулку с этой лошадкой
                     </button>
                 </div>
@@ -188,7 +196,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="time">Время *</label>
                                 <div class="input-icon">
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -197,7 +205,7 @@
                                     </svg>
                                     <input type="time" id="time" name="time" required>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="form-group">
@@ -270,55 +278,6 @@
             </div>
         </div>
     </section>
-    <!-- <section id="horses" class="horses">
-        <div class="horses-container">
-            <div class="horses-ops">
-                <h2>Лошадки на нашем Ранчо</h2>
-                <p>Записывайтесь на прогулку и познакомьтесь с замечательными породами лошадей.</p>
-            </div>
-            <div class="horses-gallery">
-                <div class="horses-card">
-                    <img src="./img/gallery/test1.jpg" alt="horse1">
-                    <h4>test text 1</h4>
-                    <p>test sub text1</p>
-                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
-                        Записаться на прогулку с этой лошадкой
-                    </button>
-                </div>
-                <div class="horses-card">
-                    <img src="./img/gallery/test2.jpg" alt="horse2">
-                    <h4>test text 2</h4>
-                    <p>test sub text2</p>
-                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
-                        Записаться на прогулку с этой лошадкой
-                    </button>
-                </div>
-                <div class="horses-card">
-                    <img src="./img/gallery/test3.jpg" alt="horse3">
-                    <h4>test text 3</h4>
-                    <p>test sub text3</p>
-                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
-                        Записаться на прогулку с этой лошадкой
-                    </button>
-                </div>
-                <div class="horses-card">
-                    <img src="./img/gallery/test4.jpg" alt="horse4">
-                    <h4>test text 4</h4>
-                    <p>test sub text4</p>
-                    <button class="order-btn" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">
-                        Записаться на прогулку с этой лошадкой
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    
-
-
-    
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

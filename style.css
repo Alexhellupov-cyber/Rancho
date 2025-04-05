@@ -615,7 +615,6 @@ textarea:focus {
 /* Мобильные устройства */
 @media (max-width: 768px) {
     .header-menu {
-        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
